@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AntonioTeran_examen.Resumen">
+    <StackLayout>
+             <Label
+                 x:Name="lblUsuario"
+                 HeightRequest="60"  
+                 HorizontalOptions="FillAndExpand" 
+                 Text="Usuario Logeado =" 
+                 BackgroundColor="blue"
+                 TextColor="White" 
+                 FontSize="20" 
+                 HorizontalTextAlignment="Center"
+                 VerticalTextAlignment="Center"/>
+
+
+
+
+        <Grid Margin="20,20,20,20" BackgroundColor="AntiqueWhite">
+            <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+            <Grid.RowDefinitions></Grid.RowDefinitions>
+
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Nombre:"></Label>
+            <Label Grid.Row="0" Grid.Column="1" x:Name="txtNombre"></Label>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Total a pagar:"></Label>
+            <Label Grid.Row="1" Grid.Column="1" x:Name="txtTotalPagar"  ></Label>
+
+  
+        </Grid>
+
+
+
+
+
+
+
+
+        </StackLayout>
+</ContentPage>

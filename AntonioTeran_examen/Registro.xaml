@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AntonioTeran_examen.Registro">
+    <StackLayout>
+             <Label
+                 x:Name="lblUsuario"
+                 HeightRequest="60"  
+                 HorizontalOptions="FillAndExpand" 
+                 Text="Usuario Logeado =" 
+                 BackgroundColor="blue"
+                 TextColor="White" 
+                 FontSize="20" 
+                 HorizontalTextAlignment="Center"
+                 VerticalTextAlignment="Center"/>
+
+
+
+
+        <Grid Margin="20,20,20,20" BackgroundColor="AntiqueWhite">
+            <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+            <Grid.RowDefinitions></Grid.RowDefinitions>
+
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Nombre:"></Label>
+            <Entry Grid.Row="0" Grid.Column="1" x:Name="txtNombre" Placeholder="Ingrese su Nombre"></Entry>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Monto inicial:"></Label>
+            <Entry Grid.Row="1" Grid.Column="1" x:Name="txtMontoInicial" Placeholder="Ingrese Monto" Keyboard="Numeric"></Entry>
+
+         
+            <Label Grid.Row="2" Grid.Column="0" Text="Pago mensual:"></Label>
+            <Entry Grid.Row="2" Grid.Column="1" x:Name="txtPagoMensual" IsReadOnly="True"></Entry>
+
+
+
+            
+             <Button Grid.Row="3" Grid.Column="0" x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"></Button>
+            
+             <Button Grid.Row="3" Grid.Column="1" x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"></Button>
+        </Grid>
+
+
+
+
+
+
+
+
+        </StackLayout>
+</ContentPage>
